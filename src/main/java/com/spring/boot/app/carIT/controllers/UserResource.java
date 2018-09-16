@@ -17,7 +17,7 @@ public class UserResource {
         return userService.getAllUsers();
     }
 
-    @GetMapping(value = "/customers/{id}")
+    @GetMapping(value = "/customer/{id}")
     public User getCustomerById(@PathVariable("id") int id) {
         return userService.getUserById(id);
     }
@@ -28,11 +28,12 @@ public class UserResource {
     }
 
     @PutMapping("/customer/update")
-    public void updateCustomer(@RequestBody User user){
+    public void updateCustomer(@RequestBody User user) {
         userService.modifyUser(user);
     }
+
     @DeleteMapping("/customer/remove/{userId}")
-    public void removeCustomer(@PathVariable("userId") int userId){
-       userService.deleteUser(userId);
+    public void removeCustomer(@PathVariable("userId") int userId) {
+        userService.deleteUser(userId);
     }
 }
