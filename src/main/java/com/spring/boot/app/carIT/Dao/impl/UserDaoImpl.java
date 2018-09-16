@@ -34,11 +34,14 @@ public class UserDaoImpl implements UserDAO {
 
     @Override
     public void updateUser(User user) {
-//todo
+        User users = fetchUserById(user.getUserId());
+        users.setUserName(user.getUserName());
+        users.setCarNumber(user.getCarNumber());
+        entityManager.flush();
     }
 
     @Override
     public void removeUser(int userId) {
-//todo
+        entityManager.remove(fetchUserById(userId));
     }
 }

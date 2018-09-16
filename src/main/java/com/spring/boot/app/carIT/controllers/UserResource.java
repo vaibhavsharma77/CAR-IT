@@ -26,4 +26,13 @@ public class UserResource {
     public void saveCustomer(@RequestBody User user) {
         userService.registerUser(user);
     }
+
+    @PutMapping("/customer/update")
+    public void updateCustomer(@RequestBody User user){
+        userService.modifyUser(user);
+    }
+    @DeleteMapping("/customer/remove/{userId}")
+    public void removeCustomer(@PathVariable("userId") int userId){
+       userService.deleteUser(userId);
+    }
 }
