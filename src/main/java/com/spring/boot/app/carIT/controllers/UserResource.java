@@ -11,7 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("carIt")
-@Api(value = "This is Customer Resource")
 public class UserResource {
     @Autowired
     private UserService userService;
