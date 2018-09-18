@@ -1,4 +1,3 @@
-# CAR-IT
 # Spring Boot REST + JPA + Hibernate + MySQL based Application with Swagger 2 documentation
 
 Before Using the Application Please follow the below mentioned steps:
