@@ -13,7 +13,7 @@ Before Using the Application Please follow the below mentioned steps:
 
 - CREATE TABLE `user`(USER_ID int NOT NULL AUTO_INCREMENT primary key ,USER_NAME varchar(50),CAR_NUMBER varchar(20))
 
-## 3. Dumping data for table carit.`user`: ~3 rows inserted ##
+## 3. Dumping data for table carit.`user`: ~2 rows inserted ##
 
 - INSERT INTO carit.`user`(USER_ID, USER_NAME, CAR_NUMBER)VALUES(101, 'virat', 'Jaguar'),(102, 'ajay', 'Twz X');
 
